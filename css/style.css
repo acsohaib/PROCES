@@ -1,0 +1,120 @@
+:root {
+	/* marges : */
+  --margeDeLaPage: 0px;
+  --espaceEntreLesBlocs : 100px;
+
+  /* couleurs */
+  --couleurTitre :rgb(0, 0, 0);
+  --couleurDuTexte : rgb(184, 184, 163);
+  --couleurFond : rgb(5, 5, 8);
+
+  /* dimension des blocs */
+  --largeurPremierBloc : 500px;
+  --largeurAside : 250px;
+
+
+  /* taille des textes :  */
+  --fontsizeGlobal : 16px;
+  --fontSizeH1 : 40px;
+  --fontSizeH2 : 40px;
+}
+
+html{
+font-size: var(--fontsizeGlobal);
+ font-family: "CHILAX";
+ height: 100vh;
+ overflow-y: hidden;
+ display: flex;
+ /* background-color: var(--couleurFond); */
+ background-color: rgb(255, 255, 255);
+ /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Bonfire_Flames.JPG/1200px-Bonfire_Flames.JPG"); */
+ color: var(--couleurDuTexte);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+header{
+	size: 500px 1334px;
+	width: var(--largeurPremierBloc);
+	background-image: url("/images/persoproces3.jpg");
+}
+
+aside{
+	width: var(--largeurAside)
+}
+
+h1{
+	color: var(--couleurTitre);
+	font-size: var(--fontSizeH1);
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+h2{
+	color: var(--couleurTitre);
+	font-size: var(--fontSizeH2);
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+body{
+	display: flex;
+	height: 100%;
+	padding: var(--margeDeLaPage);
+	position: relative;
+}
+
+body>*{
+	margin-right: var(--espaceEntreLesBlocs);
+}
+
+.galerie_horizontale{
+	  width: auto;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.galerie_horizontale>*{
+	  width: auto;
+  height: 30%;
+  position: relative;
+}
+
+.fullPage{
+	height: 100vh;
+	position: relative;
+	top: calc( var(--margeDeLaPage)* -1 );
+}
+
+figure,video{
+	height: 100%;
+	width: auto;
+}
+
+figcaption{
+	font-style: italic;
+}
+
+
+/* canvas{display: none;} */
+
+.premier{
+	background-image: url("https://images.are.na/eyJidWNrZXQiOiJhcmVuYV9pbWFnZXMiLCJrZXkiOiI0MTA2NTU2NS9vcmlnaW5hbF8yMjgxMjY0NzMyNWE0NGMwMjQ4OGE0MWVjMDk0YjExMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0Ijo2MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX0sIndlYnAiOnsicXVhbGl0eSI6NzV9LCJmbGF0dGVuIjp7ImJhY2tncm91bmQiOnsiciI6MjAzLCJnIjoyMDMsImIiOjIwM319LCJqcGVnIjp7InF1YWxpdHkiOjc1fSwicm90YXRlIjpudWxsfX0=");
+}
+
+@font-face {
+  font-family: "CHILAX";
+  src:
+    url("../Chillax-Bold.woff") format("woff");
+}
+
+
+
+.derniereVideo{
+	margin-right: 0px;
+}
